@@ -1,0 +1,10 @@
+parameters:
+    level: max
+    phpVersion:
+        min: 80200
+        max: 80499
+    paths:
+        - src
+        - tests
+    # Public methods check their arguments at run time for callers without static analysis.
+    treatPhpDocTypesAsCertain: false

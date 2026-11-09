@@ -1,0 +1,64 @@
+{
+    "name": "websitescreenshotworld/websitescreenshotworld-php",
+    "description": "PHP client for the Website Screenshot World Instant Snap and Auto Schedule APIs, with webhook signature verification.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "screenshot",
+        "website screenshot",
+        "screenshot api",
+        "pdf",
+        "webhook",
+        "psr-18"
+    ],
+    "homepage": "https://websitescreenshotworld.com",
+    "authors": [
+        {
+            "name": "Silhouettec Solutions Private Limited",
+            "email": "support@websitescreenshotworld.com"
+        }
+    ],
+    "support": {
+        "email": "support@websitescreenshotworld.com",
+        "issues": "https://github.com/websitescreenshotworld/websitescreenshotworld-php/issues",
+        "source": "https://github.com/websitescreenshotworld/websitescreenshotworld-php"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "php-http/discovery": "^1.19",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.1 || ^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "3.95.27",
+        "guzzlehttp/guzzle": "7.16.1",
+        "phpstan/phpstan": "2.3.3",
+        "phpunit/phpunit": "11.5.57"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebsiteScreenshotWorld\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebsiteScreenshotWorld\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": [
+            "php-cs-fixer check --diff",
+            "phpstan analyse --no-progress --memory-limit=1G"
+        ],
+        "fix": "php-cs-fixer fix"
+    }
+}
