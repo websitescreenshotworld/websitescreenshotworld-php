@@ -32,9 +32,9 @@
         "psr/http-message": "^1.1 || ^2.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "3.95.27",
-        "guzzlehttp/guzzle": "7.16.1",
-        "phpstan/phpstan": "2.3.3",
+        "friendsofphp/php-cs-fixer": "3.95.28",
+        "guzzlehttp/guzzle": "8.3.1",
+        "phpstan/phpstan": "2.3.5",
         "phpunit/phpunit": "11.5.57"
     },
     "autoload": {
